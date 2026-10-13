@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SavourStreet – Beginner-friendly Indian street food recipes</title>
+<meta name="description" content="Reliable, step-by-step Indian street food recipes for beginners: pani puri, vada pav, pav bhaji and more.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div><div class="glow g4"></div>
+
+<nav class="glass">
+  <a href="#top" class="logo metal-text">SavourStreet</a>
+  <div class="links"><a href="#featured">Featured</a><a href="#basics">Start here</a><a href="#recipes">All recipes</a><a href="#join">Newsletter</a></div>
+  <div class="nav-r"><button class="icon-btn" id="theme" aria-label="Switch light or dark theme">◐</button><a href="#recipes" class="btn">Browse recipes</a></div>
+</nav>
+
+<main id="top">
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <h1>Street food you can <span class="metal-text">actually make</span> at home</h1>
+    <p>Tested Indian street food recipes with clear steps, ingredient swaps and fixes for common mistakes. Written for first-time cooks.</p>
+    <div class="cta"><a href="#featured" class="btn">See featured recipes</a><a href="#basics" class="btn ghost">How we teach</a></div>
+    <form class="search glass" id="searchForm" role="search">
+      <input id="q" type="search" placeholder="Search pani puri, vada pav, bhel…" aria-label="Search recipes">
+      <button class="btn" type="submit">Search</button>
+    </form>
+  </div>
+  <div>
+    <div class="slider glass" id="hero" aria-roledescription="carousel" aria-label="Featured dishes">
+      <div class="viewport"><div class="track" id="heroTrack"></div></div>
+      <button class="arrow prev" aria-label="Previous slide">‹</button>
+      <button class="arrow next" aria-label="Next slide">›</button>
+      <div class="dots" id="heroDots"></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="featured"><div class="wrap">
+  <div class="head">
+    <div><h2>Featured <span class="metal-text">recipes</span></h2><p>Start with these. Each one lists swaps for hard-to-find ingredients.</p></div>
+    <div class="rail-ctrl"><button class="arrow" id="railPrev" aria-label="Scroll left">‹</button><button class="arrow" id="railNext" aria-label="Scroll right">›</button></div>
+  </div>
+  <div class="rail" id="rail"></div>
+</div></section>
+
+<section id="basics"><div class="wrap">
+  <div class="head"><div><h2>How every recipe <span class="metal-text">is built</span></h2><p>Four parts, in the same order, so you always know where to look.</p></div></div>
+  <div class="steps">
+    <div class="step glass"><h3>Shopping list</h3><p>Quantities in grams and cups, plus a swap for every specialty ingredient.</p></div>
+    <div class="step glass"><h3>Prep first</h3><p>What to chop, soak or grind before the stove is on, with timings.</p></div>
+    <div class="step glass"><h3>Cook step by step</h3><p>Short steps with heat levels and what the dish should look like at each stage.</p></div>
+    <div class="step glass"><h3>Fix it</h3><p>Soggy puris, split chutney, bland masala: what went wrong and how to rescue it.</p></div>
+  </div>
+</div></section>
+
+<section id="recipes"><div class="wrap">
+  <div class="head"><div><h2>All <span class="metal-text">recipes</span></h2><p>Filter by how much experience you need.</p></div></div>
+  <div class="chips" id="chips" role="group" aria-label="Filter recipes"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="join"><div class="wrap">
+  <div class="news glass">
+    <div><h2>Get one new recipe <span class="metal-text">every week</span></h2><p>A beginner-friendly street food recipe, with prep tips, in your inbox.</p></div>
+    <div>
+      <form class="search glass" id="newsForm">
+        <input type="email" id="email" placeholder="you@example.com" required aria-label="Email address">
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+      <div class="msg" id="msg" role="status"></div>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span class="logo metal-text">SavourStreet</span><span>© <span id="yr"></span> SavourStreet. Recipes for first-time cooks.</span></div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
